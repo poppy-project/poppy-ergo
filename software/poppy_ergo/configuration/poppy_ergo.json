@@ -4,65 +4,65 @@
       "sync_read": false,
       "attached_motors": [
         "base",
-        "head"
+        "tip"
       ],
       "port": "auto"
     }
   },
   "motorgroups": {
-    "head": [
-      "head_pan",
-      "head_tilt_lower",
-      "head_tilt_upper"
-    ],
     "base": [
-      "base_pan",
-      "base_tilt_lower",
-      "base_tilt_upper"
+      "m1",
+      "m2",
+      "m3"
+    ],
+    "tip": [
+      "m4",
+      "m5",
+      "m6"
     ]
   },
   "motors": {
-    "base_tilt_lower": {
-      "offset": 0.0,
+    "m1": {
+      "offset": -22.5,
+      "type": "RX-64",
+      "id": 11,
+      "angle_limit": [
+        -112.5,
+        67.5
+      ],
+      "orientation": "direct"
+    },
+    "m2": {
+      "offset": 22.5,
       "type": "RX-64",
       "id": 12,
       "angle_limit": [
         -90.0,
         90.0
       ],
-      "orientation": "direct"
-    },
-    "head_tilt_upper": {
-      "offset": 0.0,
-      "type": "RX-28",
-      "id": 16,
-      "angle_limit": [
-        -90.0,
-        90.0
-      ],
       "orientation": "indirect"
     },
-    "base_tilt_upper": {
-      "offset": 0.0,
+    "m3": {
+      "offset": 22.5,
       "type": "RX-64",
       "id": 13,
       "angle_limit": [
         -90.0,
         90.0
       ],
-      "orientation": "direct"
+      "orientation": "indirect"
     },
-    "base_pan": {
-      "offset": 22.5,
-      "type": "RX-64",
-      "id": 11,
+    "m4": {
+      "offset": -22.5,
+      "type": "RX-28",
+      "id": 14,
       "angle_limit": [
-        -67.5,
-        112.5
+        -112.5,
+        67.5
       ],
       "orientation": "direct"
     },
-    "head_tilt_lower": {
+    "m5": {
       "offset": 0.0,
       "type": "RX-28",
       "id": 15,
@@ -72,15 +72,15 @@
       ],
       "orientation": "indirect"
     },
-    "head_pan": {
-      "offset": 22.5,
+    "m6": {
+      "offset": 0.0,
       "type": "RX-28",
-      "id": 14,
+      "id": 16,
       "angle_limit": [
-        -67.5,
-        112.5
+        -90.0,
+        90.0
       ],
-      "orientation": "direct"
+      "orientation": "indirect"
     }
   }
 }
