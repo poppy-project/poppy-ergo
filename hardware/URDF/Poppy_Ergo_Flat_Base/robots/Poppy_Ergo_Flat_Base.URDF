@@ -1,0 +1,361 @@
+<robot
+  name="Poppy_Ergo_Flat_Base">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2.64110985432126E-10 0.0051564849385187 -0.00818075198433085"
+        rpy="0 0 0" />
+      <mass
+        value="0.149645525028119" />
+      <inertia
+        ixx="0.000165010641726175"
+        ixy="3.20371508980511E-12"
+        ixz="-3.38465848610006E-12"
+        iyy="0.000152877479609567"
+        iyz="6.96031194297111E-06"
+        izz="0.000276749195479103" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="U_shape">
+    <inertial>
+      <origin
+        xyz="-9.01351444357301E-06 -4.79439299620186E-07 0.0127888567972571"
+        rpy="0 0 0" />
+      <mass
+        value="0.00600499024509973" />
+      <inertia
+        ixx="1.45060936903202E-06"
+        ixy="-7.26871914453954E-15"
+        ixz="-9.98935444187312E-10"
+        iyy="2.75387772757833E-06"
+        iyz="2.95907074307061E-11"
+        izz="2.23943353647271E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/U_shape.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/U_shape.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0205"
+      rpy="-6.12303176911189E-17 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="U_shape" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="module_1">
+    <inertial>
+      <origin
+        xyz="6.62581141646462E-05 0.013872615061315 1.65614552636891E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0833142368972856" />
+      <inertia
+        ixx="2.95618040635473E-05"
+        ixy="-4.10887174416726E-07"
+        ixz="6.23163354626402E-13"
+        iyy="1.71877288858238E-05"
+        iyz="-3.11175475690346E-12"
+        izz="3.59106087022851E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/module_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/module_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.03"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="U_shape" />
+    <child
+      link="module_1" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="base_module_2">
+    <inertial>
+      <origin
+        xyz="6.9321168887892E-05 0.0120133941902615 -3.40558685185121E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0804147809717077" />
+      <inertia
+        ixx="2.11567314944031E-05"
+        ixy="-3.97414990728109E-07"
+        ixz="1.03907707110605E-12"
+        iyy="1.52718936051721E-05"
+        iyz="-8.33628075285751E-11"
+        izz="2.62707173142305E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/base_module_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/base_module_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m3"
+    type="revolute">
+    <origin
+      xyz="0 0.07 0"
+      rpy="0 0 0" />
+    <parent
+      link="module_1" />
+    <child
+      link="base_module_2" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="tip_module_1">
+    <inertial>
+      <origin
+        xyz="-6.78505238925987E-07 -0.000627393562754652 0.0140536891093957"
+        rpy="0 0 0" />
+      <mass
+        value="0.0802833119039321" />
+      <inertia
+        ixx="3.29048535221614E-05"
+        ixy="-4.39095812687944E-11"
+        ixz="-3.11022565375266E-09"
+        iyy="2.99794276548224E-05"
+        iyz="1.03833282104137E-06"
+        izz="1.63333212237711E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/tip_module_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/tip_module_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m4"
+    type="revolute">
+    <origin
+      xyz="0 0.063 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_module_2" />
+    <child
+      link="tip_module_1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="tip_middle">
+    <inertial>
+      <origin
+        xyz="6.62581140885944E-05 0.0138726150618781 1.65608174396148E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0833142368971469" />
+      <inertia
+        ixx="2.95618040619418E-05"
+        ixy="-4.10887174939438E-07"
+        ixz="6.23281247319764E-13"
+        iyy="1.71877288860392E-05"
+        iyz="-3.11183021230087E-12"
+        izz="3.59106087008676E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/tip_middle.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/tip_middle.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m5"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0702000000000001"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="tip_module_1" />
+    <child
+      link="tip_middle" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="tip">
+    <inertial>
+      <origin
+        xyz="1.84821469240148E-09 -0.0111032439663837 0.000674686418933734"
+        rpy="0 0 0" />
+      <mass
+        value="0.0746560951391437" />
+      <inertia
+        ixx="2.17101807137168E-05"
+        ixy="2.72963562168911E-12"
+        ixz="7.53502132431397E-13"
+        iyy="1.35368429866126E-05"
+        iyz="8.89711701496086E-07"
+        izz="1.76738469454012E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/tip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Poppy_Ergo_Flat_Base/meshes/tip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m6"
+    type="revolute">
+    <origin
+      xyz="0 0.0699999999999999 0"
+      rpy="0 -1.5707963267949 0" />
+    <parent
+      link="tip_middle" />
+    <child
+      link="tip" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>

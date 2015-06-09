@@ -1,0 +1,6 @@
+<package>
+  <description brief="Poppy_Ergo_Flat_Base">Poppy_Ergo_Flat_Base</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>
