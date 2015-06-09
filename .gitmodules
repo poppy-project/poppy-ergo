@@ -1,3 +1,6 @@
 [submodule "hardware/robotis_library"]
 	path = hardware/robotis_library
 	url = https://github.com/poppy-project/Robotis-library.git
+[submodule "hardware/support"]
+	path = hardware/support
+	url = https://github.com/poppy-project/robot-support-toolbox
