@@ -22,7 +22,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Poppy_Ergo/meshes/base_link.STL" />
+          filename="package://Poppy_Ergo/meshes/support_suction_pad.STL" />
       </geometry>
       <material
         name="">
@@ -36,7 +36,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Poppy_Ergo/meshes/base_link.STL" />
+          filename="package://Poppy_Ergo/meshes/support_suction_pad.STL" />
       </geometry>
     </collision>
   </link>
