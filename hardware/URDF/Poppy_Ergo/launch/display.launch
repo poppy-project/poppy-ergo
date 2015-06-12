@@ -6,7 +6,7 @@
     default="False" />
   <param
     name="robot_description"
-    textfile="$(find Poppy_Ergo_Flat_Base)/robots/Poppy_Ergo_Flat_Base.URDF" />
+    textfile="$(find Poppy_Ergo)/robots/Poppy_Ergo.URDF" />
   <param
     name="use_gui"
     value="$(arg gui)" />
@@ -22,5 +22,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find Poppy_Ergo_Flat_Base)/urdf.rviz" />
+    args="-d $(find Poppy_Ergo)/urdf.rviz" />
 </launch>
