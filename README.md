@@ -2,17 +2,18 @@
 
 [![PyPI](https://img.shields.io/pypi/v/poppy-ergo.svg)](https://pypi.python.org/pypi/poppy-ergo/)
 
-Poppy Ergo is a robotic 6-degree-of-freedom arm developped by the flower lab at INRIA bordeaux.
+Poppy Ergo is a robotic 6-degrees-of-freedom arm developped by the Flowers laboratory at Inria Bordeaux.
 
-This [Poppy creature](https://github.com/poppy-project/poppy-creature) is not maintained anyway, but he have a little brother called [Poppy Ergo Jr](https://github.com/poppy-project/poppy-ergo-jr)!
 
-![](doc/ErgoRobotFondationCartier.jpg)
+[![](doc/ErgoRobotFondationCartier.jpg)](https://www.youtube.com/watch?v=YRh8S1P2dcw&list=PLdX8RO6QsgB737U9B-oggjKj3dTtRilni&index=3)
 
-This robot was developped for scientific purpose of the lab, and highlighted by ["The ergo-robots experiment, Artificial curiosity and language formation in robots"](https://flowers.inria.fr/robots/ergo-robots/) with fondation cartier.
+This robot was developped for scientific purpose of the lab, and highlighted by ["The Ergo robots experiment, Artificial curiosity and language formation in robots"](https://flowers.inria.fr/robots/ergo-robots/) with fondation cartier.
+
+This robot has a little brother [Poppy Ergo Jr](https://github.com/poppy-project/poppy-ergo-jr), working with XL-320 motors and thought for education purpose.
 
 ## Description
 
-This robot is animated by 6 Dynamixel MX-28 motors linked with 3D printable parts.
+Poppy Ergo is animated by 6 Dynamixel MX-28 motors linked with 3D printable parts.
 
 ![](doc/ergo.png)
 
