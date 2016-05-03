@@ -1,4 +1,4 @@
-# Poppy-Ergo
+# Poppy Ergo
 
 [![PyPI](https://img.shields.io/pypi/v/poppy-ergo.svg)](https://pypi.python.org/pypi/poppy-ergo/)
 
