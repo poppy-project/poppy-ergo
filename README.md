@@ -10,19 +10,20 @@ This [Poppy creature](https://github.com/poppy-project/poppy-creature) is not ma
 
 This robot was developped for scientific purpose of the lab, and highlighted by ["The ergo-robots experiment, Artificial curiosity and language formation in robots"](https://flowers.inria.fr/robots/ergo-robots/) with fondation cartier.
 
-##description
+## Description
 
 This robot is animated by 6 Dynamixel MX-28 motors linked with 3D printable parts.
 
 ![](doc/ergo.png)
 
-You can control this robot through USB2Dynamixel or USB2AX with the [Pypot Python lib](https://github.com/poppy-project/pypot) and the [Poppy creature](https://github.com/poppy-project/poppy-creature)
-This robot can also be simulated using Vrep
+You can control this robot through USB2Dynamixel or USB2AX with the [pypot Python library](https://github.com/poppy-project/pypot) and [poppy-creature](https://github.com/poppy-project/poppy-creature).
 
-## Install Poppy-Ergo on your personnal computer
-If you want to install the software locally or if you are working with the simulator, you will have to install Python. We strongly recommand using a pre-packaged distribution as [Anaconda](http://continuum.io/downloads) and install the [poppy-ergo](https://github.com/poppy-project/poppy-ergo/tree/master/software) package (the easiest way is with `pip install poppy-ergo`).
+This robot can also be simulated using V-REP.
 
-**For more informations, refer to the [poppy documentation](http://docs.poppy-project.org/en/installation/index.html)**.
+## Install Poppy Ergo on your personnal computer
+If you want to install the software locally or if you are working with the simulator, you will have to install Python. We strongly recommand using a pre-packaged distribution as [Anaconda](http://continuum.io/downloads) and install [poppy-ergo](https://github.com/poppy-project/poppy-ergo/tree/master/software) package (the easiest way is with `pip install poppy-ergo`).
+
+**For more informations, refer to the [Poppy documentation](http://docs.poppy-project.org/en/installation/index.html)**.
 
 ## Support
 
